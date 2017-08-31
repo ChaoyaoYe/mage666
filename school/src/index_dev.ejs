@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 10 ]>
+<html class="ieHack" lang="zh-cn">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="zh-cn" >
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv="windows-Target" content="_top">
+<meta name="author" content="<%= htmlWebpackPlugin.options.author %>" />
+<meta name="keywords" content="<%= htmlWebpackPlugin.options.title %>" />
+<meta name="description" content="<%= htmlWebpackPlugin.options.title %>" />
+<title><%= htmlWebpackPlugin.options.title %></title>
+<script src="./static/js/other/run.js"></script>
+<script type="text/javascript">
+(function(){  
+    if(window.location.pathname === '/schoolAdmin'){
+        window.location.href = '/schoolAdmin/';
+    }
+
+    ms.checkBrowser();   
+    
+    if (!window.JSON) {
+        document.write('<scr' + 'ipt src="http://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"><\/scr' + 'ipt>');
+    }
+    
+})();
+</script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="./static/font/iconfont.css">
+</head>
+<body>
+<div class="container" id="container"></div>
+<!--[if lt IE 10]>
+<script src="./static/js/frame/react/es5-shim-min.js"></script>
+<script src="./static/js/frame/react/es5-sham-min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="./static/js/libs/jquery-1.11.3.min.js"></script>
+<!-- <script type="text/javascript" src="./static/js/plugins/jquery.form.min.js"></script>
+<script type="text/javascript" src="./static/js/libs/jquery.ztree.core.min.js"></script>
+<script type="text/javascript" src="./static/js/libs/jquery.ztree.excheck.min.js"></script> -->
+<!-- <script type="text/javascript" src="./static/js/plugins/kindeditor-4.1.10/kindeditor-min.js"></script> -->
+</body>
+</html>
